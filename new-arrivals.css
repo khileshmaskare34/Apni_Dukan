@@ -1,0 +1,79 @@
+.new-arrivals{
+    padding: 5vh 5vw;
+}
+.product-intro {
+    text-align: center;
+    /* background-color: red; */
+}
+.product-intro h1{
+    color: indianred;
+    letter-spacing: 0.2rem;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.product-intro h1 span{
+    color: rgba( 15,10,29,0.849);
+}
+.product-intro p{
+    color: grey;
+    padding: 15px 0;
+}
+.card-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4vw;
+    align-items: center;
+    flex-wrap: wrap;
+    cursor: pointer;
+    margin: 4rem 0;
+    /* background-color: lightgreen; */
+}
+.card-container .card{
+    flex-basis: 20%;
+    padding: 0.8rem;
+    position: relative;
+}
+.card .img{
+    width: 250px;
+    height: 40vh;
+    /* background-color: green; */
+    overflow: hidden;
+}
+.img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s ease-in-out;
+}
+.img>img:hover{
+    width: 105%;
+    height: 105%;
+    transition: cubic-bezier(0.19, 1, 0.22, 1)2s;
+}
+.card i{
+    color: goldenrod;
+    margin: 10px 0;
+}
+.card button{
+    color: white;
+    background-color: rgba( 15,10,29,0.849);
+    border: none;
+    outline: none;
+    margin-top: 15px;
+    padding: 2px 20px;
+}
+
+.card::before{
+    content: '20% off';
+    width: 25%;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: indianred;
+    padding: 0px 4px;
+    transform: rotate(-20deg);
+}
